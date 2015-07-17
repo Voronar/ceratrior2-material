@@ -1,0 +1,204 @@
+/* Code color scheme */
+
+/*
+ * background       : #263238 Blue Grey 900
+ * base text        : #FFFFFF White
+ * keyword          : #80CBC4 Teal 200
+ * string           : #FFEB3B Yellow 500
+ * match bracket    : #EEFF41 A200
+ * nonmatch bracket : #F4511E Deep Orange 600
+ * comment          : #757575 Grey 600
+ * selected         : #B2DFDB Teal 100
+ * active line      : #37474F Blue Grey 800
+ */
+
+
+/* cm-keyword        : var, function, !important */
+/* cm-tag            : HTML elements */
+/* cm-bracket        : html < </ > */
+.cm-keyword, .cm-tag, .cm-bracket {
+  color: #80CBC4;
+}
+
+/* cm-atom           : #id */
+/* cm-number         : 20 */
+.cm-atom, .cm-number, .cm-link {
+  color: #FFEB3B;
+}
+
+/* cm-variable-3     : :after */
+/* cm-operator       : CoffeeScript ->, CSS colons */
+/* cm-variable       : $, i */
+.cm-variable-3, .cm-operator, .cm-variable {
+  color: #FFFFFF;
+}
+
+/* cm-meta           : @font-face */
+/* cm-qualifier      : .box */
+/* cm-builtin        : define, substr, const */
+/* cm-attribute      : class="" id="" */
+.cm-meta, .cm-qualifier, .cm-builtin, .cm-attribute {
+  color: #80CBC4;
+}
+
+/* cm-string         : "string" */
+/* cm-string-2       : some CSS values */
+.cm-string, .cm-string-2 {
+  color: #FFEB3B;
+}
+
+/* cm-property       : getElementbyId, CSS properties */
+/* cm-variable-2     : for key in [this], Markdown li */
+.cm-property, .cm-variable-2 {
+  color: #FFFFFF;
+}
+
+/* cm-comment        : // comments */
+.cm-comment {
+  color: #757575;
+}
+
+/* cm-def            : @include, [this], var name, param; */
+.cm-def {
+  color: #FFFFFF;
+}
+
+/* cm-matchhighlight : Match Highlighter (https://github.com/gintau/bracket-match-highlighter) */
+.cm-matchhighlight {
+  background: #333;
+}
+
+/* cm-error          : color : #4444; */
+.cm-error {
+  background: #F4511E;
+  color: #FFFFFF !important;
+}
+
+/* Brackets UI colors */
+
+.CodeMirror, .CodeMirror-scroll {
+  background: #263238;
+  color: #FFFFFF;
+}
+
+.CodeMirror-gutters {
+  background: #263238;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background, .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt, .inline-widget .CodeMirror-gutter-elt {
+  background: #37474F;
+}
+
+.CodeMirror-linenumber {
+  color: #757575;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+  color: #FFFFFF;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid #FFFFFF !important;
+}
+
+.CodeMirror-selected {
+  background: #B2DFDB;
+  opacity: .23;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+  background: #80CBC4;
+  color: #263238;
+}
+
+.CodeMirror-matchingbracket {
+  background: transparent !important;
+  color: #EEFF41 !important;
+  text-shadow: 0 0 10px #EEFF41;
+  font-weight: 700;
+}
+
+.CodeMirror-nonmatchingbracket {
+  background: #F4511E !important;
+  color: #FFFFFF !important;
+}
+
+.CodeMirror-matchingtag {
+  background: rgba(255,255,255,0.15);
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+  border-left: none !important;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.CodeMirror-searching {
+  background: #FFEB3B;
+}
+
+.searching-current-match {
+  background: #F4511E;
+}
+
+.CodeMirror-foldgutter-open:after {
+  content: "⌵";
+  font-size: 1.3em;
+  color: #757575;
+}
+
+.CodeMirror-foldgutter-folded:after {
+  content: "+";
+  font-size: 1.3em;
+  font-weight: 700;
+  background: transparent !important;
+  color: #EEFF41 !important;
+  text-shadow: 0 0 10px #EEFF41;
+}
+
+.CodeMirror-foldgutter-folded {
+  padding-top: 2px;
+}
+
+.CodeMirror-foldgutter-open {
+  padding-top: 1px;
+}
+
+.CodeMirror-foldmarker {
+  display: inline-block;
+  border-radius: 0.75em;
+  padding: 0 2px;
+  border: 0;
+  font-size: .75em;
+  color: #EEFF41 !important;
+  text-shadow: 0 0 10px #EEFF41;
+  background: rgba(255, 255, 255, (1 / 6));
+}
+
+.CodeMirror-foldmarker:after {
+  content: '\2022\2022\2022';
+  position: relative;
+  top: 1px;
+}
+
+/* Extensions */
+
+/**
+* Brackets Css Color Preview (https://github.com/cmgddd/Brackets-css-color-preview)
+* ---------------------------------------------------------------------------------
+*/
+
+.ico-cssColorPreview {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-bottom: 2px;
+}
+
+/**
+* Brackets Git (https://github.com/zaggino/brackets-git)
+* ---------------------------------------------------------------------------------
+*/
+
+.brackets-git-gutter-modified, .brackets-git-gutter-removed, .brackets-git-gutter-added {
+  width: 3px;
+}

@@ -1,0 +1,14 @@
+{
+  "title"      : "Ceratrior II (inspired by Material design)",
+  "name"       : "ceratrior2-material",
+  "description": "Material dark theme(beta) for Brackets.",
+  "homepage"   : "https://github.com/voronar/ceratrior2-material",
+  "version"    : "0.0.2",
+  "author"     : "Kirill A. Khalitov voronar@gmail.com",
+  "license"    : "MIT",
+  "theme"      :
+  {
+    "file": "ceratrior2.css",
+    "dark": true
+  }
+}
